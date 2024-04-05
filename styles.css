@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 16px;
+}
+
+
+/* Define our grid */
+
+
+.container {
+    display: grid; /* Use CSS Grid to create the page layout */
+    grid-template-columns: 300px repeat(7, 1fr);
+    grid-template-rows: 120px repeat(6, auto) 100px;
+    gap: 1rem;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 25px;
+
+}
+
+
+
+
+
+
+header {
+    background-color: aqua;
+    grid: 1 / 9;
+}
+
+nav {
+    background-color: khaki;
+
+}
+
+aside {
+    background-color: rgb(24, 107, 120);
+}
+
+.content-1 {
+    background-color: fuchsia;
+}
+
+.content-2 {
+    background-color: rgb(121, 198, 148);
+}
+
+.content-3 {
+    background-color: rgb(192, 25, 64);
+}
+
+footer {
+    background-color: rgb(255, 98, 0);
+}
