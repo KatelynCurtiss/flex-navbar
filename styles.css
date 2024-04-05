@@ -17,9 +17,11 @@
     grid-template-columns: 300px repeat(7, 1fr);
     grid-template-rows: 120px repeat(6, auto) 100px;
     gap: 1rem;
+    width: 90rem;
     height: 100vh;
     margin: 0 auto;
     padding: 25px;
+    
 
 }
 
@@ -30,30 +32,42 @@
 
 header {
     background-color: aqua;
-    grid: 1 / 9;
+    grid-column: 1 / 9;
+    
 }
 
 nav {
     background-color: khaki;
+    grid-column: 1 / 9;
+    height: 15vh;
+  
 
 }
 
 aside {
     background-color: rgb(24, 107, 120);
+    grid-column: 1 / 2;
+    height: 30vh;
 }
 
 .content-1 {
     background-color: fuchsia;
+    grid-column: 2 / 4;
 }
 
 .content-2 {
     background-color: rgb(121, 198, 148);
+    grid-column: 4 / 9;
 }
 
 .content-3 {
     background-color: rgb(192, 25, 64);
+    grid-column: 2 / 9;
+    height: 20vh;
 }
 
 footer {
     background-color: rgb(255, 98, 0);
+    grid-column: 1 / 9;
+    height: 15vh;
 }
